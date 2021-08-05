@@ -1,24 +1,12 @@
-const inputEL = document.querySelector('[id="font-size-control"]')
+const rangeEl = document.querySelector('[id="font-size-control"]')
+
+const textEl = document.querySelector('[id="text"]')
 
 
-const spanEl = document.querySelector('[id="text"]')
-console.log(spanEl)
+rangeEl.addEventListener('input', changeFontSize)
 
-
-const textEl = spanEl.textContent
-textEl.style.colore = "blue"
-console.log(textEl)
-// textEl.style.fontSize = "25px"
-// textEl.innerHTML = "String";
-// console.log(textEl)
-
-
-inputEL.addEventListener('input', changeRange)
-
-function changeRange () {
-
-                                    
-
-
+function changeFontSize () {
+  
+     textEl.style.fontSize = Number(rangeEl.value) + 'px'                           
 
 }

@@ -15,9 +15,6 @@ const images = [
 
 
 
-
-
-
 const parentEl = document.querySelector('#gallery')
 
 const items = images.map(image => {
